@@ -114,6 +114,7 @@ class RNDraftView extends Component {
             ? draftJsHtml
             : { uri: "file:///android_asset/draftjs-source.html" }
         }
+        forceDarkKeyboardAppearance={this.props.forceDarkKeyboardAppearance}
         useWebKit={true}
         keyboardDisplayRequiresUserAction={false}
         originWhitelist={["*"]}
