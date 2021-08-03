@@ -40,6 +40,10 @@ function App() {
           })
         );
       }
+
+      document
+        .getElementsByClassName("public-DraftEditor-content")[0]
+        .setAttribute("autocorrect", "off");
     }
   }, [isMounted]);
 
