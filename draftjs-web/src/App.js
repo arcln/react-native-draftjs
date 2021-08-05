@@ -44,6 +44,10 @@ function App() {
       document
         .getElementsByClassName("public-DraftEditor-content")[0]
         .setAttribute("autocorrect", "off");
+
+      window.addEventListener("click", () =>
+        window.ReactNativeWebView.postMessage(JSON.stringify({ click: true }))
+      );
     }
   }, [isMounted]);
 
